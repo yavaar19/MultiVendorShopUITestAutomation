@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Integration">
+    <listeners>
+        <listener class-name="TestCases.Listeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="End To End Test Cases">
+        <classes>
+            <class name="TestCases.EndToEnd.EndToEnd"></class>
+        </classes>
+    </test>
+</suite>

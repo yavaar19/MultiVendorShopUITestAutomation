@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Integration">
+    <listeners>
+        <listener class-name="TestCases.Listeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="Integration Test Cases">
+        <classes>
+            <class name="TestCases.Integration.AdminRegistrationIntegration"></class>
+            <class name="TestCases.Integration.AdminLoginIntegration"></class>
+            <class name="TestCases.Integration.AdminCategoryIntegration"></class>
+            <class name="TestCases.Integration.SellerRegistrationIntegration"></class>
+            <class name="TestCases.Integration.SellerLoginIntegration"></class>
+            <class name="TestCases.Integration.SellerProductIntegration"></class>
+            <class name="TestCases.Integration.CustomerRegistrationIntegration"></class>
+            <class name="TestCases.Integration.CustomerLoginIntegration"></class>
+            <class name="TestCases.Integration.ProductCartIntegration"></class>
+            <class name="TestCases.Integration.CheckOutCartIntegration"></class>
+            <class name="TestCases.Integration.ProductReviewIntegration"></class>
+            <class name="TestCases.Integration.SellerDeliveryIntegration"></class>
+            <class name="TestCases.Integration.DeliveryOrderIntegration"></class>
+        </classes>
+    </test>
+</suite>
