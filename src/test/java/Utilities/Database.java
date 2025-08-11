@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class Database {
 
-    private static final String url = "jdbc:mysql://ecommercestore-yavaarnosi-e32c.h.aivencloud.com:17827/ecommerce_store?ssl-mode=REQUIRED";
-    private static final String user = "avnadmin";
-    private static final String password = "AVNS_q332psQ6B3zBF_blqUv";
+    private static final String url = System.getenv("DBURL");
+    private static final String user = System.getenv("DBUSERNAME");
+    private static final String password = System.getenv("DBPASSWORD");
     private static Connection conn;
 
     public static void cleanTables() throws SQLException {
